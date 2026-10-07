@@ -1,0 +1,34 @@
+# ---- Large media & installers (GitHub blocks files over 100 MB) ----
+*.exe
+*.msi
+*.mp4
+*.m4v
+*.mov
+*.avi
+*.mkv
+*.zip
+*.rar
+*.7z
+
+# ---- Editor / tool junk ----
+tempCodeRunnerFile.*
+.vscode/
+.idea/
+
+# ---- OS junk ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- Dependencies & builds (if you add them later) ----
+node_modules/
+dist/
+build/
+
+# ---- Secrets (never commit these) ----
+.env
+.env.*
+*.pem
+*.key
+secrets.*
+config.local.*

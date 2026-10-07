@@ -1,0 +1,23 @@
+:root {
+  --backgroundColor: black;
+  --textColor: white;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+nav > ul {
+  list-style: none;
+  display: flex;
+  padding: 10px;
+}
+nav {
+  background-color: cadetblue;
+  color: black;
+  font-size: 30px;
+  background-color: var(--backgroundColor);
+  color: var(--textColor);
+}
+nav > ul > li {
+  margin: 30px;
+}

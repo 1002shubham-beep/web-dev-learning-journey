@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .container {
+      width: 100vw;
+      height: 20vh;
+      background-color: black;
+      padding: 10px;
+      color: gray;
+    }
+    .main {
+      height: 90%;
+      display: flex;
+    }
+    .thumb > img {
+      height: 100%;
+    }
+    .contents {
+      padding-left: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .info {
+      display: flex;
+      gap: 10px;
+    }
+    .dur {
+      background-color: rgba(0, 0, 0, 0.8);
+
+      color: white;
+      position: absolute;
+      bottom: 5px;
+      right: 5px;
+      padding: 2px 5px;
+      font-size: 12px;
+      border-radius: 3px;
+    }
+    .thumb {
+      position: relative;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="main">
+        <div class="thumb">
+          <img src="" alt="image" />
+          <div class="dur"></div>
+        </div>
+        <div class="contents">
+          <div class="title"></div>
+          <div class="info">
+            <div class="cname"></div>
+            <div class="views"></div>
+            <div class="month"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

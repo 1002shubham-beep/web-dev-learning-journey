@@ -1,0 +1,13 @@
+.box {
+  border: 2px solid black;
+  padding: 34px;
+  box-shadow: 5px 15px 5px green;
+}
+.text-shadow {
+  text-shadow: 2px 2px 4px #888888;
+}
+p {
+  outline: 2px solid black;
+  outline-offset: 12px;
+}
+/*Outline->not included in box model and no radius and the text to outline distance can be varied by outline-offset*/

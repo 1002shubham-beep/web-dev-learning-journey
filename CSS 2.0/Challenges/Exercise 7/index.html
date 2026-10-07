@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      top: 100px;
+    }
+    .container {
+      width: 80vw;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      gap: 30px;
+    }
+    .boxes {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: #f2f0ec;
+      border-radius: 10%;
+      font-weight: 900;
+      padding: 15px 30px;
+      text-align: center;
+      margin: 10px;
+    }
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #ffd741;
+      border-radius: 10%;
+      text-decoration: none;
+      color: black;
+      font-weight: normal;
+      padding: 10px 20px;
+      margin-top: 10px;
+    }
+    @media screen and (max-width: 480px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+  <body>
+    <main>
+      <div class="container">
+        <div class="boxes box1">
+          <div>English</div>
+          <div>Includes all languages</div>
+          <div><a href="ue_allinone.exe">Download 64-bit</a></div>
+        </div>
+        <div class="boxes box2">
+          <div>Deutsch</div>
+          <div>German</div>
+          <div><a href="ue_allinone.exe">Download 64-bit</a></div>
+        </div>
+        <div class="boxes box3">
+          <div>Italiano</div>
+          <div>Italian</div>
+          <div><a href="ue_allinone.exe">Download 64-bit</a></div>
+        </div>
+        <div class="boxes box4">
+          <div>Español</div>
+          <div>Spanish</div>
+          <div><a href="ue_allinone.exe">Download 64-bit</a></div>
+        </div>
+        <div class="boxes box5">
+          <div>français</div>
+          <div>French</div>
+          <div><a href="ue_allinone.exe">Download 64-bit</a></div>
+        </div>
+        <div class="boxes box6">
+          <div>Português brasileiro</div>
+          <div>Brazilian Portuguese</div>
+          <div><a href="ue_allinone.exe">Download 64-bit</a></div>
+        </div>
+        <div class="boxes box7">
+          <div>日本</div>
+          <div>Japanese</div>
+          <div><a href="ue_allinone.exe">Download 64-bit</a></div>
+        </div>
+        <div class="boxes box8">
+          <div>한국어</div>
+          <div>Korean</div>
+          <div><a href="ue_allinone.exe">Download 64-bit</a></div>
+        </div>
+        <div class="boxes box9">
+          <div>华语</div>
+          <div>Chinese</div>
+          <div><a href="ue_allinone.exe">Download 64-bit</a></div>
+        </div>
+        <div class="boxes box10">
+          <div>華語</div>
+          <div>Traditional Chinese</div>
+          <div><a href="ue_allinone.exe">Download 64-bit</a></div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

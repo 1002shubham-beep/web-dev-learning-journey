@@ -1,0 +1,19 @@
+ul {
+  /* list-style: devanagari;
+  background-color: yellow; */
+  /* list-style-position: inside; numbers inside the list element */
+  /* list-style-type: "🔥"; */
+  /* list-style: disc inside url(https://mir-s3-cdn-cf.behance.net/project_modules/source/4178e949665279.560862a568876.gif); */
+}
+li {
+  /* background-color: rebeccapurple;
+  border: 2px solid black; */
+  /* list-style-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/source/4178e949665279.560862a568876.gif); */
+}
+ul {
+  list-style: none;
+  display: flex;
+}
+li {
+  padding: 23px;
+}

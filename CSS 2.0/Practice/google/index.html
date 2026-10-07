@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google</title>
+  </head>
+  <link rel="icon" href="Google__G__logo.svg.webp" /><style>
+    * {
+      margin: 0;
+      padding: 0;
+
+      color: #b9bcba;
+    }
+    body {
+      background-color: #22242a;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      margin-top: 20px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    .left > span {
+      color: white;
+      margin: 10px;
+    }
+    .right > span {
+      margin: 10px;
+    }
+    .typebox {
+      display: flex;
+      justify-content: center;
+    }
+    main > .container > .typebox > input {
+      background-color: #4d5156;
+      border-radius: 40px;
+      width: 40vw;
+      height: 6vh;
+    }
+    main > .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80vh;
+    }
+    button {
+      background-color: #303134;
+      padding: 10px;
+      border-radius: 10px;
+      margin: 0 10px;
+    }
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100vw;
+      background-color: black;
+    }
+    footer > .bottom {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+    }
+    footer > .top {
+      padding: 20px;
+    }
+    .container {
+      width: 100vw;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .buttons {
+      padding: 25px;
+    }
+  </style>
+  <body>
+    <header>
+      <nav>
+        <div class="left"><span>About</span><span>Store</span></div>
+        <div class="right">
+          <span>Gmail</span>
+          <span>Images</span>
+          <span>Labs</span>
+          <span>Apps</span>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="logo">
+          <img width="370px" src="google-logo-transparent.png" alt="" />
+        </div>
+        <div class="typebox">
+          <input type="text" />
+        </div>
+        <div class="buttons">
+          <button>Google Search</button><button>I'm Feeling Lucky</button>
+        </div>
+      </div>
+    </main>
+    <footer style="background-color: black">
+      <div class="top"><span>India</span></div>
+      <hr />
+      <div class="bottom">
+        <div class="left">
+          <span>Advertising</span>
+          <span>Business</span>
+          <span>How Search Works</span>
+        </div>
+        <div class="right">
+          <span>Privacy</span>
+          <span>Terms</span>
+          <span>Settings</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

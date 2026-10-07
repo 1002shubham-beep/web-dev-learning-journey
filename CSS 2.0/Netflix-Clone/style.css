@@ -1,0 +1,26 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.main {
+  background-image: url("assests/img/bg.jpg");
+  height: 80vh;
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.main > .box {
+  height: 80vh;
+  width: 100%;
+  opacity: 0.44;
+  background-color: black;
+  position: absolute;
+  top: 0;
+}
+nav {
+  max-width: 80vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,0 +1,47 @@
+/* div {
+  color: red;
+  background-color: yellow;
+} */
+
+div {
+  background-color: red;
+}
+/*Child Selector*/
+div > p {
+  color: black;
+  background-color: antiquewhite;
+}
+/*Descendent Selector*/
+div p {
+  color: red;
+  background-color: pink;
+}
+/*Universal Selecetor*/
+* {
+  margin: 0;
+  padding: 0;
+}
+/*Pseudo Selector*/
+/*CSS pseudo-selectors are special keywords added to standard selectors that let you style elements based on their temporary state, position, or specific sub-parts. Instead of targeting a static HTML tag, ID, or class directly, they target elements dynamically based on user interaction or document structure.*/
+/*visited for visited link 
+ link for unvisited link
+ active for when clicked  i.e. when active
+ p:firstchild->wherever p is the first child the code applies*/
+a:visited {
+  color: yellow;
+}
+a:link {
+  color: green;
+}
+a:active {
+  background-color: red;
+}
+a:hover {
+  background-color: yellow;
+}
+p:first-child {
+  background-color: purple;
+}
+p:fullscreen {
+  color: aqua;
+}

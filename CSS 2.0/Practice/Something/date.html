@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date&Time</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Cute+Font&family=Oswald:wght@200..700&display=swap");
+    main {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container {
+      font-family: "Oswald", sans-serif;
+      font-size: 20px;
+      color: beige;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      background-color: chocolate;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 10px 5px 30px black;
+      padding: 10px;
+      width: 700px;
+      height: 440px;
+    }
+    input {
+      background-color: beige;
+      border: none;
+      border-radius: 12px;
+      width: 100%;
+      height: 20px;
+      padding: 10px;
+      color: chocolate;
+      font-weight: bold;
+    }
+    .heart {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    .heart {
+      position: absolute;
+      font-size: 2rem;
+      animation: float 6s infinite linear;
+      opacity: 0.6;
+    }
+    .h1 {
+      left: 10%;
+    }
+    .h2 {
+      left: 50%;
+    }
+    .h3 {
+      left: 80%;
+      animation-delay: 3s;
+    }
+    @keyframes float {
+      from {
+        transform: translateY(100vh);
+      }
+      to {
+        transform: translateY(-100px);
+      }
+    }
+    body {
+      overflow: hidden;
+    }
+    button {
+      padding: 10px;
+      background-color: beige;
+      border: none;
+      border-radius: 12px;
+      color: chocolate;
+      font-size: 20px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    button:hover {
+      transform: translateY(-4px);
+      transition: 0.3s;
+    }
+  </style>
+  <body>
+    <div class="heart h1">❤️</div>
+    <div class="heart h2">❤️</div>
+    <div class="heart h3">❤️</div>
+    <main>
+      <div class="container">
+        <div class="date">
+          <h2>When are you free?</h2>
+          <p>Pick a day that works best for you</p>
+          <input type="date" name="" id="" />
+        </div>
+        <div class="time">
+          <h2>And what time?</h2>
+          <p>Choose whatever feels comfortable</p>
+          <input type="time" />
+        </div>
+        <button onclick="window.location.href = 'activity.html'">Next..</button>
+      </div>
+    </main>
+    <script>
+      document.getElementById("next").addEventListener("click", () => {
+        const date = document.getElementById("date").value;
+
+        const time = document.getElementById("time").value;
+
+        localStorage.setItem("date", date);
+        localStorage.setItem("time", time);
+
+        window.location.href = "activity.html";
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+body {
+  background-color: pink;
+  color: white;
+}
+
+/*Element Selector*/
+h1 {
+  color: black;
+}
+h2 {
+  color: red;
+}
+#first {
+  color: white;
+  background-color: blue;
+}
+
+/*Class Selector*/
+h3,
+h4,
+h5,
+h5 {
+  background-color: yellow;
+  color: orange;
+}
+div.red {
+  color: aliceblue;
+} /*It has more importance */
+red {
+  color: black;
+}
+/*Universal Selector*/
+* {
+  margin: 0;
+  padding: 0;
+}
+/*Background Image*/
+.image {
+  width: 500px;
+  height: 500px;
+  background-image: url(images.jpg);
+  /*background-repeat: repeat-x; repeats image in x direction*/
+  /* background-repeat: repeat-y; repeats image in y direction */
+  /* background-repeat: no-repeat; doesnt repeats the image */
+  /* background-size: cover;
+  background-size: contain;
+  background-size: auto;
+  background-size: {
+    width: 500px;
+  } */
+  background-size: cover;
+  /* background-position: topright; */
+}
+.black {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 500px;
+}
+.black h1 {
+  background-image: url(images.jpg);
+  background-size: cover;
+  background-position: center;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}

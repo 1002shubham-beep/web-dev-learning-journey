@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animations</title>
+  </head>
+  <style>
+    .container {
+      background-color: red;
+      height: 80vh;
+      width: 30vw;
+    }
+    .box {
+      width: 34px;
+      height: 45px;
+      background-color: yellow;
+      /* animation: ShubhKaAnimation;
+      animation-duration: 3s;
+      animation-timing-function: cubic-bezier(1, 0, 0, 0.98);
+      animation-iteration-count: 3;
+      animation-delay: 1s;
+      animation-direction: alternate-reverse;
+      animation-play-state: paused; */
+      /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+      /* animation: ShubhKaAnimation 3s cubic-bezier(1, 0, 0, 0.98) 1s 3
+        alternate-reverse running; */
+      animation:
+        ShubhKaAnimation,
+        Shubh2 3s ease-in-out 1s 1 forwards;
+    }
+    @keyframes ShubhKaAnimation {
+      from {
+        background-color: red;
+      }
+      to {
+        transform: translateX(1000px);
+        background-color: blue;
+      }
+    }
+    @keyframes Shubh2 {
+      0% {
+        transform: rotate(100deg);
+      }
+      20% {
+        transform: rotate(200deg);
+      }
+      50% {
+        transform: rotate(220deg);
+      }
+      80% {
+        transform: rotate(300deg);
+      }
+      100% {
+        transform: rotate(310deg);
+      }
+    }
+  </style>
+  <body>
+    <div class="container"><div class="box">Box</div></div>
+  </body>
+</html>

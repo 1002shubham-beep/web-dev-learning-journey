@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+div {
+  background-color: aqua;
+}
+.box1 {
+  margin: 25px;
+  padding: 10px;
+  border: 2px solid black;
+  height: 200px;
+  box-sizing: border-box; /*height here is 200px = content+padding+border*/
+}
+.box2 {
+  color: red;
+  margin: 25px;
+  padding: 10px;
+  border: 2px solid black;
+  height: 200px;
+  box-sizing: border-box;
+}
+/*when any of the two element's margin overlaps with the other then the maximum margin is applied once*/

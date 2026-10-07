@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.element {
+  height: 200px;
+  width: 200px;
+  background-color: #0071ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 1.35rem;
+  color: white;
+  /* animation: name duration timing-function delay iteration-count direction
+    fill-mode; */
+  animation: spin 4s ease-in-out 1s infinite alternate;
+  /* animation-fill-mode: forwards; */
+  animation-play-state: running;
+}
+.element:hover {
+  animation-play-state: paused;
+}
+@keyframes spin {
+  0% {
+  }
+  50% {
+    scale: 2;
+    transform: rotate(
+      0
+    ); /* element will not rotate till 50% of animation is complete*/
+    border-radius: 0; /*element will have original border i.e. 0 till 50% of animation*/
+  }
+  100% {
+    transform: rotate(360deg);
+    border-radius: 50%;
+    scale: 2;
+  }
+}

@@ -1,0 +1,57 @@
+/* * {
+  margin: 0;
+  padding: 0;
+}
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+.container {
+  display: grid;
+  grid-template-columns: 150px 150px 150px;
+  grid-template-rows: 150px 150px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: red;
+  }
+} */
+
+.grid-container {
+  display: grid;
+  /* grid-template-columns: 300px 200px 200px; */
+  /* grid-template-columns: 1fr 2fr 1fr;
+  
+  grid-template-rows: 200px 500px 400px; */
+
+  /*grid-template-rows: 100vh;
+  grid-template-columns: 300px 1fr; */
+
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 200px 200px 200px;
+  grid-auto-rows: 100px; /*sizing for unexpected row*/
+  grid-auto-flow: row; /*if any new item is added then it gets added to the collumn*/
+  gap: 1em 2em; /*row collumn*/
+  /*Items property*/
+  justify-items: flex-end; /*specifies each item position in each grid block horizontaly*/
+  align-items: flex-end; /*specifies each item position in each grid block vertically*/
+  /*Content property*/
+  justify-content: center; /*specifies the whole grid container position horizontaly*/
+  align-content: center; /*specifies the whole grid container position vertically*/
+}
+
+.item {
+  height: 50px;
+  width: 50px;
+  padding: 2em;
+  background-color: blue;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 1rem;
+}

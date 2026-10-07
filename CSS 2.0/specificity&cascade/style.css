@@ -1,0 +1,27 @@
+/*The specifity of this is 1*/
+h1 {
+  color: aqua;
+} /*The specifity of this is 10*/
+.yellow {
+  color: yellow;
+} /*The specifity of this is 10*/
+.cred {
+  color: red;
+} /*The specifity of this is 10*/
+.cpurple {
+  color: purple;
+}
+/*The specifity of this is 10*/
+/*Attribute selector*/
+[data-x="a"] {
+  background-color: bisque !important;
+}
+.cpurple {
+  background-color: aquamarine;
+} /*The specifity of this is 1+10=11*/
+h1.yellow {
+  color: black;
+}
+/*Specificity order->ID>Class,Attributes.Pseudo class>Elements*/
+/*Exception:Inline Styles and  !important*/
+/*When no style defined then user agent stylesheet comes to role*/

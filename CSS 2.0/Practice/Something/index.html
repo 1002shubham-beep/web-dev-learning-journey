@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome</title></head
+  ><style>
+    @import url("https://fonts.googleapis.com/css2?family=Cute+Font&family=Oswald:wght@200..700&display=swap");
+    main {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container {
+      font-family: "Oswald", sans-serif;
+      font-size: larger;
+      color: beige;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      background-color: chocolate;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 10px 5px 30px black;
+      padding: 10px;
+      width: 700px;
+      height: 400px;
+    }
+    button {
+      padding: 10px;
+      background-color: beige;
+      border: none;
+      border-radius: 12px;
+      color: chocolate;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    button:hover {
+      transform: translateY(-4px);
+      transition: 0.3s;
+    }
+    .heart {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    .heart {
+      position: absolute;
+      font-size: 2rem;
+      animation: float 6s infinite linear;
+      opacity: 0.6;
+    }
+    .h1 {
+      left: 10%;
+    }
+    .h2 {
+      left: 50%;
+    }
+    .h3 {
+      left: 80%;
+      animation-delay: 4s;
+    }
+    @keyframes float {
+      from {
+        transform: translateY(100vh);
+      }
+      to {
+        transform: translateY(-100px);
+      }
+    }
+    body {
+      overflow: hidden;
+    }
+  </style>
+  <body>
+    <div class="heart h1">❤️</div>
+    <div class="heart h2">❤️</div>
+    <div class="heart h3">❤️</div>
+    <main>
+      <div class="container">
+        <p class="heart">❤️</p>
+        <h1>Hey Shreya</h1>
+        <p>I wanted to ask you out.</p>
+        <p>Instead of sending a plain message, I made this little website.</p>
+        <p>
+          f you're interested, tell me when you're free and what you'd like to
+          do. ✨
+        </p>
+        <button onclick="window.location.href = 'date.html'">Begin..</button>
+      </div>
+    </main>
+  </body>
+</html>

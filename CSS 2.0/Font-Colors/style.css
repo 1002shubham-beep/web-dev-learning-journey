@@ -1,0 +1,28 @@
+h1 {
+  font-family: "Lucida Sans", Arial, sans-serif;
+}
+/*Importing Fonts*/
+p {
+  font-family: "Black Ops One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  /* text-transform: uppercase; */
+}
+h1:first-child {
+  font-family: "Playwrite AU VIC Guides", cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: underline;
+  text-decoration-color: aqua;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 10px;
+  text-indent: 50px;
+  /* letter-spacing: 10px; */
+}
+.lorem {
+  /* width: 60px;
+  border: 1px solid black;
+  word-break: break-all; */
+  /* text-overflow: ellipsis;
+  overflow: hidden; */
+}

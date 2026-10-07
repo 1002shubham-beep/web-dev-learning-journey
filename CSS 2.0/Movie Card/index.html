@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John Wick</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .card {
+        width: 410px;
+        background-color: #f5f5f5;
+        border-radius: 7px;
+      }
+      .img {
+        padding: 5px;
+      }
+      .img > img {
+        border-radius: 7px;
+        width: 400px;
+      }
+      .capsules > span {
+        border-radius: 25px;
+        margin: 0px 10px;
+        border: 1px solid black;
+        padding: 5px;
+        background-color: #1f2937;
+        color: white;
+      }
+      .content {
+        padding: 10px 10px;
+      }
+      .read {
+        display: flex;
+        justify-content: center;
+      }
+      .read > span {
+        padding: 5px;
+      }
+      .read > span > button {
+        padding: 10px;
+        border-radius: 25px;
+        background-color: #2563eb;
+        color: white;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="img">
+        <img
+          src="https://m.media-amazon.com/images/M/MV5BMDE0ZjMzOTAtMzU2OS00ZDVmLWFlMjYtMThlOWYwMDBiN2E3XkEyXkFqcGdeQWFsZWxvZw@@._V1_.jpg"
+          alt="John Wick"
+        />
+      </div>
+      <div class="capsules"><span>Movies</span><span>Action</span></div>
+      <div class="content">
+        <h1>John Wick</h1>
+        <p>
+          John Wick, a retired hitman, is forced to return to his old ways after
+          a group of Russian gangsters steal his car and kill a puppy gifted to
+          him by his late wife.
+        </p>
+      </div>
+      <div class="read">
+        <span><button>Read More</button></span>
+      </div>
+    </div>
+  </body>
+</html>

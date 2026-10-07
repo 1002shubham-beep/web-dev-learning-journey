@@ -1,0 +1,47 @@
+.box {
+  border: 2px solid black;
+  width: 80vw;
+  background-color: aquamarine;
+  box-sizing: border-box;
+  margin: auto; /*automatically centers the element--only for block level element*/
+}
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+span {
+  /*Cant apply width or size to span*/
+  background-color: aqua;
+  border: 2px solid black;
+  width: 100px;
+  height: 100px;
+}
+.container {
+  border: 2px solid black;
+  width: 80vw;
+  /* height: 80vh; */
+  min-height: 80vh;
+  background-color: aquamarine;
+  box-sizing: border-box;
+  font-size: 2em;
+  margin: 20px auto;
+}
+.container > p {
+  font-size: 2rem;
+}
+html {
+  font-size: 12px;
+}
+.mycont {
+  box-sizing: border-box;
+  margin: auto;
+  background-color: red;
+  color: black;
+  border: 2px solid black;
+  font-size: 22px;
+  width: 80vw;
+}
+.container > p > div {
+  background-color: beige;
+  width: 100%;
+}

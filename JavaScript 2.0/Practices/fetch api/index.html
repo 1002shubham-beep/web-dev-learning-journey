@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch API</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-color: yellow;
+        width: 40vw;
+        height: 45vh;
+        gap: 10px;
+        position: relative;
+      }
+      .container p {
+        background-color: beige;
+        width: 100%;
+        border: 1px solid black;
+        border-radius: 20px;
+        font-style: italic;
+      }
+      .container h2 {
+        position: absolute;
+        top: 10%;
+      }
+      .container button {
+        background-color: beige;
+        border: none;
+        cursor: pointer;
+        height: 2rem;
+        width: 80%;
+        color: black;
+        font-size: larger;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <h2>Dog Facts</h2>
+        <div class="img"></div>
+        <p id="facts">Loading...</p>
+        <button>Get Another Fact</button>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
